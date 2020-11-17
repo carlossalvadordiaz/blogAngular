@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-image: url("../assets/images/fondo.jpeg");
+    background-repeat: repeat;
+    /* background-size: ; */
+    border: 1px dotted darkgray;
+    opacity: 0.8;
+    
+}
+

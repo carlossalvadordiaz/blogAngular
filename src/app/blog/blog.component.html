@@ -1,0 +1,21 @@
+<label>Select Category: </label>
+
+
+<select (change)="onChange($event)">
+    <option value="all">All categories</option>
+
+    <option [value]="category" *ngFor="let category of categories">{{category}}</option>
+
+</select>
+
+<div class="blog" *ngFor="let post of arrPostsMostrados; let indice = index">
+
+    <h3>{{post.titulo}} </h3>
+    <p>{{post.autor}}</p>
+    <img [src]="post.imagen">
+    <p>Date: {{post.fecha}}</p>
+    <p>{{post.texto}}</p>
+
+
+    <button (click)="onClick(indice)">Delete Post</button>
+</div>

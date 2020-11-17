@@ -1,0 +1,37 @@
+<div class="formulario">
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+        <div> <label>Titulo</label>
+            <input type="text" formControlName="titulo"> </div>
+
+        <div> <label>Autor</label>
+            <input type="text" formControlName="autor"> </div>
+
+        <div> <label>Imagen</label>
+            <input type="url" placeholder="introduce url completa" formControlName="imagen"> </div>
+
+        <div> <label>Fecha</label>
+            <input type="date" formControlName="fecha"> </div>
+
+        <div> <label>Categoria</label>
+            <input type="text" formControlName="categoria">
+            <!--   <select formControlName="categoria">
+                <option value="categoria1">1</option>
+                <option value="categoria2">2</option>
+                <option value="categoria3">3</option>
+            </select> -->
+        </div>
+
+
+        <div id="textarea"> <label>Texto</label>
+            <!-- <input type="text"> -->
+            <textarea cols="30" rows="10" formControlName="autor"></textarea>
+        </div>
+
+
+        <div id="btnBorrar">
+            <input type="submit" value="Añadir entrada de blog" (click)="onClick()">
+            <!-- (click)="onClick() -->
+        </div>
+
+    </form>
+</div>
